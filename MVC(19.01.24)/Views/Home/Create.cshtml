@@ -1,0 +1,17 @@
+﻿@model User;
+<h2> Добавление пользователя</h2>
+
+<form asp-action="create" asp-controller="home">
+	<p>
+		<label asp-for="Name"> Имя</label>
+		<input type="text" asp-for="Name" />
+	</p>
+
+	<p>
+		<label asp-for="Age"> Возрас</label>
+		<input type="number" asp-for="Age" />
+	</p>
+	<p>
+		<input type="submit" value="Отправить" />
+	</p>
+</form>
